@@ -1,6 +1,6 @@
 /**
  * Tehtävä 2/2
- * TEST TEST@
+ * TEST TEST@ TEST22
  * Versio 1.0 Tee ohjelma, joka pyytää käyttäjältä numeron ja toteaa
  * sopiva, jos 1-10 tai ei kelpaa, jos jotakin muuta.
  * 
