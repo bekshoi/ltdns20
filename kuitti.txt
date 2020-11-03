@@ -1,0 +1,4 @@
+Tavaran nettohinta: 23.0 euroa
+Tavaran ALV prosentti: 12.0 %
+Tavaran bruttohinta: 25.759999999999998 euroa
+E

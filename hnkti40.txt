@@ -1,0 +1,44 @@
+Data for customer #1
+Name: wer asd
+E-mail: fgh
+Phonenumber: 4444444
+Data for customer #2
+Name: fff eee
+E-mail: rrr
+Phonenumber: 5555
+Data for customer #3
+Name: fg rt
+E-mail: hj
+Phonenumber: er
+Data for customer #4
+Name: hj df
+E-mail: kj
+Phonenumber: dr
+Data for customer #5
+Name: dg hj
+E-mail: df
+Phonenumber: k
+Data for customer #6
+Name: g h
+E-mail: j
+Phonenumber: 5
+Data for customer #7
+Name: gf nk
+E-mail: sd
+Phonenumber: hhu
+Data for customer #8
+Name: gf v
+E-mail: e
+Phonenumber: j
+Data for customer #9
+Name: df hk
+E-mail: sd
+Phonenumber: jj
+Data for customer #10
+Name: d j
+E-mail: d
+Phonenumber: 8
+Data for customer #11
+Name: fg fg
+E-mail: df
+Phonenumber: 66

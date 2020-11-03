@@ -1,0 +1,2 @@
+Merkkijonon pituuden on 8
+Viimeisen merkin on f
