@@ -1,0 +1,2 @@
+Main-Class: turva.controller.testKassakaappi
+Sealed: True
