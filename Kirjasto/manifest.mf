@@ -1,0 +1,2 @@
+Main-Class: teos.controller.testiTeos
+Sealed: True

@@ -32,7 +32,7 @@ public class DesimaliLukuNelioSumma {
             System.out.println("Tietoja on syotetty vaarassa muodossa EXPTION!!!");}
         }
 
-    public static double NelioSumma(double a, Double b){
+    public static double NelioSumma(double a, double b){
         return a*a+b*b;
     }
 }

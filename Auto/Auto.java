@@ -29,14 +29,15 @@ public Auto (String m, String r){
     public int palautaNopeus() {
         return nopeus;
     }
-/**
- * Palauttaa auton tiedot
- * @return auton tiedot
- */
-@Override
-public String toString(){
-    return merkki + " (" + reknro + ") - nopeus " + nopeus +"km/h";
-}
+    
+    /**
+    * Palauttaa auton tiedot
+    * @return auton tiedot
+    */
+    @Override
+    public String toString(){
+        return merkki + " (" + reknro + ") - nopeus " + nopeus +"km/h";
+    }
 
     //setterit
     /**
