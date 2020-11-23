@@ -1,0 +1,16 @@
+c:\Eeron\Java2019>javac SaastoTili2.java
+
+c:\Eeron\Java2019>jar cf SaastoTili.jar SaastoTili2.class
+
+editoi ja tallenna temp.mf->
+Main-Class: SaastoTili2
+Sealed: true
+
+c:\Eeron\Java2019>jar -uvmf temp.mf SaastoTili.jar
+updated manifest
+
+c:\Eeron\Java2019>java -jar SaastoTili.jar
+Tama ohjelma kasittelee saastotilia.
+toisen tilin saldo on 10000.0
+
+c:\Eeron\Java2019>

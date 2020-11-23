@@ -1,4 +1,6 @@
-package teos.model;
+package Kirjasto;
+
+// package teos.model;
 
 /**
  * Luokka Teos
@@ -116,7 +118,7 @@ package teos.model;
         Scanner input = new Scanner(System.in);
         int q = input.nextInt(); //
         status=q;
-        // input.close();
+        input.close();
         }
     
     /** metodi asettaa kiran tietoa */
@@ -150,6 +152,6 @@ package teos.model;
         s = input.nextInt(); //
         status=s;
         // Teos Book = new Teos(author, name, genre, ISBN, pages, status);
-        // input.close();
+        input.close();
     }
  }

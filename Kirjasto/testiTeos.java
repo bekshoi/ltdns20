@@ -1,4 +1,6 @@
-package teos.controller;
+package Kirjasto;
+
+//package teos.controller;
 /**
  * Testi Teos luokka
  * Luokka Teos
@@ -6,7 +8,7 @@ package teos.controller;
  * @version 1.00 2020/11/6
  * 
  */
-import teos.model.Teos;
+//import teos.model.Teos;
 public class testiTeos {
     public static void main(String[] args) {
 

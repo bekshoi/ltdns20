@@ -6,16 +6,30 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Debug (Launch) - Current File",
+            "name": "CodeLens (Launch) - testiAnimal",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "Animal.testiAnimal",
+            "projectName": "ltdns20_341733ad"
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-testiSL<ltdns20_341733ad>",
+            "name": "CodeLens (Launch) - TestiSalasana2",
             "request": "launch",
-            "mainClass": "testiSL",
+            "mainClass": "TestiSalasana2",
             "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestiSalasana",
+            "request": "launch",
+            "mainClass": "Salasana.TestiSalasana",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
         }
     ]
 }

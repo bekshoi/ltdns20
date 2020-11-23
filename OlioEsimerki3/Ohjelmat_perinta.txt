@@ -1,0 +1,14 @@
+﻿Kirjoita luokka	Ympyra, joka periytyy kantaluokasta GeometrinenOlio ja sisältää seuraavat asiat:	
+a) yksityisiä kenttinä	on prosessorin säde (desimaaliluku)	
+b) Kirjoita luokalle konstruktorit, joista toinen luo ympyrän säteellä 0 ja toinen parametrin (säde) mukaan.
+c) Kirjoita luokkaan Ympyra julkiset metodi, joiden avulla voi asettaa säteen.	
+d) Kirjoita luokkaan julkinen metodi jonka avulla voi palauttaa säteen arvon.	
+e) Kirjoita luokkaan metodit, jotka palauttavat Ympyrän alan (sade * sade * Math.PI), halkaisijan (2 * sade) ja kehän (2 * sade * Math.PI).
+f) Kirjoita luokkaan metodi, joka palauttaa yhtenä merkkijonona "Ympyrä on luotu <pvm> ja sen sade on <sade>"	
+g) Kirjoita pääohjelma,	joka luo kaksi Ympyra-oliota sopivilla keksimilläsi tiedoilla eri konstruktoreita käyttäen.
+_________________________________________-
+Kirjoita testiohjelma MonimuotoisuusTesti.java, jossa
+a) luo kaksi erilaista Ympyra-oliota ja kaksi Suorakulmio-oliota
+b) luo 4-alkioinen Object taulukko, johon sijoitat a-kohdan oliot
+c) tulosta for-silmukassa taulukon olioiden luontiaika GeometrinenOlio-luokan getLuontiPaiva()-metodilla
+- ei tarvitse tutkia instanceof, koska sekä Ympyrä että Suorakulmio voidaan suoraan castata GeometrinenOlio:ksi
