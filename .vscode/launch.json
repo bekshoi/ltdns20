@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - testiAnimal2",
+            "request": "launch",
+            "mainClass": "Animal2.testiAnimal2",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - testiLaiva",
+            "request": "launch",
+            "mainClass": "Laivat.testiLaiva",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - testiAnimal",
             "request": "launch",
             "mainClass": "Animal.testiAnimal",

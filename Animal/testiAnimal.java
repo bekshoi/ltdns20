@@ -56,25 +56,25 @@ package Animal;
 public class testiAnimal {
     public static void main(String[] args) {
 
-        Papukaija papukaija = new Papukaija("Papukaija", 1); //luoda olio papukaija
+        // Papukaija papukaija = new Papukaija("Papukaija", 1); //luoda olio papukaija
         // Kissa kissa = new Kissa("Kissa",1); // luoda olio Kissa
-        Kissa kissa = new Kissa();       
-        Lammas lammas = new Lammas("Lammas",1); // luoda olio lammas parametriton
+        Kissa kissa = new Kissa("Barsik",0,0);       
+        // Lammas lammas = new Lammas("Lammas",1); // luoda olio lammas parametriton
 
-        System.out.println("Eläin <" + kissa.getName() + "> joka " + kissa.getStatus() + " ja jolla on " + kissa.getLives() + " elää");        
-        int l = 6; // muutaja kissan elää varten - testi
-        kissa.setLives(l);
-        System.out.println("Eläin <" + kissa.getName() + "> joka " + kissa.getStatus() + " ja jolla on " + kissa.getLives() + " elää");
-        kissa.LaskeLives(l);
-        System.out.println("Eläin <" + kissa.getName() + "> joka " + kissa.getStatus() + " ja jolla on " + kissa.getLives() + " elää");
+        // System.out.println("Eläin <" + kissa.getName() + "> joka " + kissa.getStatus() + " ja jolla on " + kissa.getLives() + " elää");        
+        // int l = 6; // muutaja kissan elää varten - testi
+        // kissa.setLives(l);
+        // System.out.println("Eläin <" + kissa.getName() + "> joka " + kissa.getStatus() + " ja jolla on " + kissa.getLives() + " elää");
+        // kissa.LaskeLives(l);
+        // System.out.println("Eläin <" + kissa.getName() + "> joka " + kissa.getStatus() + " ja jolla on " + kissa.getLives() + " elää");
         System.out.print(kissa);
 
-        System.out.print(papukaija);
-        papukaija.setMerirosvoisanta("Jack_Sparrow");
-        System.out.println("Uusi merirosvoisäntä on " + papukaija.getMerirosvoisantaNimi());
+        // System.out.print(papukaija);
+        // papukaija.setMerirosvoisanta("Jack_Sparrow");
+        // System.out.println("Uusi merirosvoisäntä on " + papukaija.getMerirosvoisantaNimi());
 
-        System.out.println("Lampaan vari on " + lammas.getVari());
-        lammas.setVari("musta");
-        System.out.println("Lampaan vari on " + lammas.getVari());
+        // System.out.println("Lampaan vari on " + lammas.getVari());
+        // lammas.setVari("musta");
+        // System.out.println("Lampaan vari on " + lammas.getVari());
     }    
 }

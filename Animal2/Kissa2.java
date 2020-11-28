@@ -1,14 +1,14 @@
-package Animal;
+package Animal2;
 
 /**
- * Luokka Kissa
+ * Luokka Kissa2
  * 
  * @author bekshoi
- * @version 2.50 2020/11/22
- * 
+ * @version 3.00 2020/11/28
+ * @ltdns20 http://github.com/bekshoi/ltdns20
  */
 
-public class Kissa extends Animal{
+public class Kissa2 extends Animal2{
 
     /**ATTRIBUUTTI*/
     private int lives;
@@ -18,21 +18,20 @@ public class Kissa extends Animal{
      * Luokan konstruktori
      * @param lives kokonaisluku, kissan elämä lukumääre 
      */
-    public Kissa(){
-        this.name = "Kissa";
+    public Kissa2(){
+        // this.name = "Kissa";
         this.lives = 9;
     }
 
-    public Kissa(String name, int status) {
+    public Kissa2(String name, int status) {
         super(name, status);
         this.lives = 9;
     }
     
-    public Kissa(String name, int status, int lives) {
+    public Kissa2(String name, int status, int lives) {
         super(name, status);
         this.lives = lives;
     }
-
     /** METODI PALAUTTA KISSAN elämää LUKUMÄÄRE */
     /**
     * Palauttaa kissan elämää lukumääre
@@ -90,22 +89,17 @@ public class Kissa extends Animal{
     */
     @Override
     public String toString(){
-        String x = "";
-        switch (status){
-            case 0:
-            x = "on kuollut";
-            break;
-            case 1:
-            x = "on elossa";
-            break;
-            }
-             
         return "\nEläin \n" +
         "*********************************** \n" + 
-        "Kissan nimi : " + name + "\n" + 
+        "Kissan nimi : " + super.getName() + "\n" + 
         "Kissan elämää lukumääre : " + lives + "\n" + 
         "*********************************** \n" +
-        "Tila : " + status + " - " + x + "\n" +
+        "Tila : " + super.getStatus() + "\n" +
         "*********************************** \n";
+    }
+
+    @Override
+    public void Talk() {
+        System.out.print("mau mau\n");
     }
 }
