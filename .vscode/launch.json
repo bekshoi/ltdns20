@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - testiPintaAla",
+            "request": "launch",
+            "mainClass": "testiPintaAla",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - testiPintaAla",
+            "request": "launch",
+            "mainClass": "PintaAla.testiPintaAla",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - testiNimi",
+            "request": "launch",
+            "mainClass": "Henkilo.testiNimi",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - testiAnimal2",
             "request": "launch",
             "mainClass": "Animal2.testiAnimal2",

@@ -45,12 +45,13 @@ public class testiAnimal2 {
         for (int i = 0; i <= 2; i++) {
             System.out.println("Eläin <" + animal[i].getName() + ">, joka " + animal[i].getStatus());
                 if (animal[i].getClass() == kissa.getClass()){
-                    System.out.println("jolla on " + kissa.getLives());}
+                    System.out.println("jolla on " + kissa.getLives() + " elämää");}
                     else if (animal[i].getClass() == papukaija.getClass()){
                         System.out.println("jolla on merirosvoisäntä " + papukaija.getMerirosvoisantaNimi());}
                         else if (animal[i].getClass() == lammas.getClass()){
                             System.out.println("jolla on turkiväri " + lammas.getVari());}
                     else continue;
+                    System.out.print("sanoi ");
                     animal[i].Talk();
         }        
     }    
