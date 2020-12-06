@@ -1,3 +1,5 @@
+package HenkiloTiedot;
+
 /**
  * Laadi asiakas-luokka, joka sisältää asiakkaan ID:n, nimen, sähköpostiosoitteen ja puhelinnumeron. 
  * Toteuta luokkaan metodi tietojen kysymistä varten. Laadi tämän jälkeen luokkaan metodi, joka kirjoittaa 
@@ -69,7 +71,7 @@ public class HenkiloTiedot {
      * @param id merkijono
      */
     public void setID(String id) {
-        HenkiloTiedot.id = id;
+        this.id = id;
     }
 
     /**
@@ -87,7 +89,7 @@ public class HenkiloTiedot {
      * @param nimi merkijono
      */
     public void setName(String name) {
-        HenkiloTiedot.name = name;
+        this.name = name;
     }
 
     /**
@@ -105,7 +107,7 @@ public class HenkiloTiedot {
      * @param email merkijono
      */
     public void setEmail(String email) {
-        HenkiloTiedot.email = email;
+        this.email = email;
     }
 
     /**
@@ -123,7 +125,7 @@ public class HenkiloTiedot {
      * @param phonenumber merkijono
      */
     public void setPhone(String phonenumber) {
-        HenkiloTiedot.phonenumber = phonenumber;
+        this.phonenumber = phonenumber;
     }
 
     /**

@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Ympyra10",
+            "request": "launch",
+            "mainClass": "Ympyra10",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ympyra10",
+            "request": "launch",
+            "mainClass": "Ympyra.Ympyra10",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HenkiloTiedot",
+            "request": "launch",
+            "mainClass": "HenkiloTiedot",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HenkiloTiedot",
+            "request": "launch",
+            "mainClass": "HenkiloTiedot.HenkiloTiedot",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - testiPintaAla",
             "request": "launch",
             "mainClass": "testiPintaAla",

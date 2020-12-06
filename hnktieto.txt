@@ -1,0 +1,20 @@
+Data for customer #1
+Name: Tino Torni
+E-mail: TT@gmail.com
+Phonenumber: 12345
+Data for customer #2
+Name: Andy Ant
+E-mail: AA@luukku.com
+Phonenumber: 56789
+Data for customer #3
+Name: Oleg Beksh
+E-mail: bekshoi@gmail.com
+Phonenumber: 0417032993
+Data for customer #10
+Name: Pekka Ukko
+E-mail: PU@gmail.com
+Phonenumber: 322223322
+Data for customer #11
+Name: Joku Joku
+E-mail: JJ@gmail.com
+Phonenumber: 222333
