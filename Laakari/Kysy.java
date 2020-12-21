@@ -1,12 +1,13 @@
+package Laakari;
 /*
 Ohjelmointi 1: Valikko.java
-Ohjelmassa tulostetaan valikko ja testataan minkä valinnan käyttäjä syötti
+Ohjelmassa tulostetaan valikko ja testataan minkï¿½ valinnan kï¿½yttï¿½jï¿½ syï¿½tti
 Opittava asia: switch - case (default)
 @author Marko Hassinen
 @version 1.1
 */
 
-// Otetaan käyttöön java.util pakkaus
+// Otetaan kï¿½yttï¿½ï¿½n java.util pakkaus
 import java.util.*; // Scanner
 
 // luokka Kysy
@@ -23,7 +24,7 @@ public class Kysy
       {
          try
          {
-            String sLuku = lukija.nextLine(); // Luetaan käyttäjän valinta
+            String sLuku = lukija.nextLine(); // Luetaan kï¿½yttï¿½jï¿½n valinta
             iLuku = Integer.parseInt(sLuku);
             bHyvaLuku=true;
          }
@@ -46,7 +47,7 @@ public class Kysy
       {
    	     try
          {
-            String sLuku = lukija.nextLine(); // Luetaan käyttäjän valinta
+            String sLuku = lukija.nextLine(); // Luetaan kï¿½yttï¿½jï¿½n valinta
             dLuku = Double.parseDouble(sLuku);
             bHyvaLuku=true;
          }
@@ -69,13 +70,13 @@ public class Kysy
       {
          try
          {
-            String sSyote= lukija.nextLine(); // Luetaan käyttäjän valinta
+            String sSyote= lukija.nextLine(); // Luetaan kï¿½yttï¿½jï¿½n valinta
             cMerkki = sSyote.charAt(0);
             bHyvaSyote=true;
          }
          catch(Exception e)
          {
-            System.out.println("Huono syöte! Anna merkki");
+            System.out.println("Huono syï¿½te! Anna merkki");
             bHyvaSyote = false;
          }
       }while(!bHyvaSyote);
@@ -93,7 +94,7 @@ public class Kysy
          try
          {
             System.out.print("k/e ");
-            String sSyote= lukija.nextLine(); // Luetaan käyttäjän valinta
+            String sSyote= lukija.nextLine(); // Luetaan kï¿½yttï¿½jï¿½n valinta
             cMerkki = sSyote.charAt(0);
             if(cMerkki != 'k' & cMerkki != 'e')
                throw new Exception();
@@ -101,7 +102,7 @@ public class Kysy
          }
          catch(Exception e)
          {
-            System.out.println("Huono syöte! Syötä k tai e");
+            System.out.println("Huono syï¿½te! Syï¿½tï¿½ k tai e");
             bHyvaSyote = false;
          }
    	  }while(!bHyvaSyote);

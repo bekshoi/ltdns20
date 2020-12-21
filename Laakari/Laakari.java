@@ -1,8 +1,9 @@
+package Laakari;
 /**
  * @(#)Laakari.java
  *
- * Tämä luokka kuvaa yhden lääkärin tiedot.
- * Luokasta on viite listalla seuraavaan lääkäriin (linkitetty lista)
+ * Tï¿½mï¿½ luokka kuvaa yhden lï¿½ï¿½kï¿½rin tiedot.
+ * Luokasta on viite listalla seuraavaan lï¿½ï¿½kï¿½riin (linkitetty lista)
  * @author Marko ja muut
  * @version 1.00 2011/1/23
  */
@@ -12,22 +13,22 @@ import java.io.Serializable;
 
 public class Laakari implements Serializable
 {
-	/** Muuttuja kuvaa lääkärin numeron, numerot ovat väliltä 1000-2999 */
+	/** Muuttuja kuvaa lï¿½ï¿½kï¿½rin numeron, numerot ovat vï¿½liltï¿½ 1000-2999 */
 	private int iLaakarinro;
-	/** Muuttuja kuvaa lääkärin nimen, jos nimeä ei ole, on oletusarvo "Ei tiedossa" */
+	/** Muuttuja kuvaa lï¿½ï¿½kï¿½rin nimen, jos nimeï¿½ ei ole, on oletusarvo "Ei tiedossa" */
 	private String sNimi;
-	/** Muuttuja kuvaa lääkärin syntymäpäivän päiväyksen, jos syntymäpäivää ei ole, on oletusarvo 1.1.1900 */
+	/** Muuttuja kuvaa lï¿½ï¿½kï¿½rin syntymï¿½pï¿½ivï¿½n pï¿½ivï¿½yksen, jos syntymï¿½pï¿½ivï¿½ï¿½ ei ole, on oletusarvo 1.1.1900 */
 	private Calendar cSyntymapaiva;
-	/** Muuttuja kuvaa lääkärin osaston jolla hän työskentelee, jos nimeä ei ole, on oletusarvo "Ei tiedossa"  */
+	/** Muuttuja kuvaa lï¿½ï¿½kï¿½rin osaston jolla hï¿½n tyï¿½skentelee, jos nimeï¿½ ei ole, on oletusarvo "Ei tiedossa"  */
 	private String sOsasto;
-	/** Muuttuja seuraava on linkki listalla olevaan seuraavaan lääkäriin. Jos kyseessä on listan viimeinen lääkäri, viittaa muuttuja tyhjään (null-arvo) */
+	/** Muuttuja seuraava on linkki listalla olevaan seuraavaan lï¿½ï¿½kï¿½riin. Jos kyseessï¿½ on listan viimeinen lï¿½ï¿½kï¿½ri, viittaa muuttuja tyhjï¿½ï¿½n (null-arvo) */
 	private Laakari seuraava;
 
 	// Konstruktorit
 
 	/**
-	 * Tyhjä oletuskonstruktori
-	 * Lääkärin arvot asetetaan oletusarvoihinsa
+	 * Tyhjï¿½ oletuskonstruktori
+	 * Lï¿½ï¿½kï¿½rin arvot asetetaan oletusarvoihinsa
 	 */
     public Laakari()
     {
@@ -40,12 +41,12 @@ public class Laakari implements Serializable
     }
 
 	/**
-	 * Konstruktori jossa asetetaan uuden lääkärin tiedot.
-	 * Tietojen asettamisessa käytetään set-metodeja.
-	 * @param iLaakarinro Lääkärin lääkärinumero (väliltä 1000-2999)
-	 * @param sNimi Lääkärin nimi
-	 * @param cSyntymapaiva Lääkärin syntymäpäivä
-	 * @param sOsasto Osasto jolla lääkäri työskentelee
+	 * Konstruktori jossa asetetaan uuden lï¿½ï¿½kï¿½rin tiedot.
+	 * Tietojen asettamisessa kï¿½ytetï¿½ï¿½n set-metodeja.
+	 * @param iLaakarinro Lï¿½ï¿½kï¿½rin lï¿½ï¿½kï¿½rinumero (vï¿½liltï¿½ 1000-2999)
+	 * @param sNimi Lï¿½ï¿½kï¿½rin nimi
+	 * @param cSyntymapaiva Lï¿½ï¿½kï¿½rin syntymï¿½pï¿½ivï¿½
+	 * @param sOsasto Osasto jolla lï¿½ï¿½kï¿½ri tyï¿½skentelee
 	 */
     public Laakari(int iLaakarinro, String sNimi, Calendar cSyntymapaiva, String sOsasto)
     {
@@ -55,7 +56,7 @@ public class Laakari implements Serializable
     	setOsasto(sOsasto);
     }
 
-    // Pääsymetodit eli aksessorit (set ja get)
+    // Pï¿½ï¿½symetodit eli aksessorit (set ja get)
     public void setLaakarinro(int iLaakarinro)
     {
     	if (iLaakarinro < 1000 | iLaakarinro > 2999)
@@ -64,9 +65,9 @@ public class Laakari implements Serializable
     		this.iLaakarinro = iLaakarinro;
     }
     /**
-     *  Metodi asettaa lääkärin nimen.
-     *  Jos parametri on tyhjä, asetetaan merkkijono "Ei tiedossa"
-     *  @param sNimi Lääkärin nimi
+     *  Metodi asettaa lï¿½ï¿½kï¿½rin nimen.
+     *  Jos parametri on tyhjï¿½, asetetaan merkkijono "Ei tiedossa"
+     *  @param sNimi Lï¿½ï¿½kï¿½rin nimi
      **/
     public void setNimi(String sNimi)
     {
@@ -76,9 +77,9 @@ public class Laakari implements Serializable
     		this.sNimi = sNimi;
     }
     /**
-     * Metodi asettaa parametrina tulleen Calendar -olion lääkärin syntymäpäiväksi
-     * Jos parametri on tyhjä viite (null-arvo), asetetaan syntymäpäiväksi 1.1.1900
-     * @param cSyntymapaiva Ilmaisee lääkärin syntymäpäivän (Calendar -olio)
+     * Metodi asettaa parametrina tulleen Calendar -olion lï¿½ï¿½kï¿½rin syntymï¿½pï¿½ivï¿½ksi
+     * Jos parametri on tyhjï¿½ viite (null-arvo), asetetaan syntymï¿½pï¿½ivï¿½ksi 1.1.1900
+     * @param cSyntymapaiva Ilmaisee lï¿½ï¿½kï¿½rin syntymï¿½pï¿½ivï¿½n (Calendar -olio)
      **/
     public void setSyntymapaiva(Calendar cSyntymapaiva)
     {
@@ -112,8 +113,8 @@ public class Laakari implements Serializable
     }
 
     /**
-     * Metodi palauttaa lääkärin nimen
-     * @return Lääkärin nimi (sNimi)
+     * Metodi palauttaa lï¿½ï¿½kï¿½rin nimen
+     * @return Lï¿½ï¿½kï¿½rin nimi (sNimi)
      **/
     public String getNimi()
     {
@@ -139,7 +140,7 @@ public class Laakari implements Serializable
     // toString()tulostaa yhden alkion tiedot
     public String toString()
     {
-    	String sLaakarituloste = "Lääkäri:";
+    	String sLaakarituloste = "Lï¿½ï¿½kï¿½ri:";
     	sLaakarituloste += " " + iLaakarinro;
     	sLaakarituloste += " " + sNimi;
     	SimpleDateFormat muunnos = new SimpleDateFormat("dd.MM.yyyy");

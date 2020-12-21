@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AsPaa",
+            "request": "launch",
+            "mainClass": "TentiOlio.AsPaa",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Testi",
+            "request": "launch",
+            "mainClass": "Levy.Testi",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Ympyra10",
             "request": "launch",
             "mainClass": "Ympyra10",

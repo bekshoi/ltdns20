@@ -1,3 +1,4 @@
+package Laakari;
 /**
  * @(#)Laakarirekisteri.java
  *
@@ -12,7 +13,7 @@ import java.io.*;
 public class Laakarirekisteri {
 
     static LaakariLista lista;
-    /** Oikeassa työssä kysytään tiedoston nimi, tässä esimerkissä
+    /** Oikeassa tyï¿½ssï¿½ kysytï¿½ï¿½n tiedoston nimi, tï¿½ssï¿½ esimerkissï¿½
      *  kompaktiuden vuoksi kiinnitetty arvo */
     static final String sTIEDOSTO = "laakarilista.dat";
 
@@ -62,7 +63,7 @@ public class Laakarirekisteri {
 
     private static void lopetus()
     {
-       System.out.println("Kiitos käytöstä");
+       System.out.println("Kiitos kï¿½ytï¿½stï¿½");
        // Tiedostoon tallentaminen
        try
        {
@@ -86,7 +87,7 @@ public class Laakarirekisteri {
        do
        {
           System.out.println("Tulostetaanko ");
-          System.out.println("1. Näytölle");
+          System.out.println("1. Nï¿½ytï¿½lle");
           System.out.println("2. Tekstitiedostoon");
           iValinta = Kysy.kluku();
        }while(iValinta <1 || iValinta>2);
@@ -117,9 +118,9 @@ public class Laakarirekisteri {
 
     private static void lisaa()
     {
-      System.out.print("Syötä lääkärinumero:");
+      System.out.print("Syï¿½tï¿½ lï¿½ï¿½kï¿½rinumero:");
       int iLaakarinro = Kysy.kluku();
-      System.out.print("Syötä lääkärin nimi:");
+      System.out.print("Syï¿½tï¿½ lï¿½ï¿½kï¿½rin nimi:");
 	  String sNimi = Kysy.mjono();
       Calendar cSyntymapaiva = null;
       int iVuosi = 0;
@@ -127,11 +128,11 @@ public class Laakarirekisteri {
       int iPaiva = 0;
       do
       {
-   	     System.out.print("Syötä lääkärin syntymävuosi(vvvv):");
+   	     System.out.print("Syï¿½tï¿½ lï¿½ï¿½kï¿½rin syntymï¿½vuosi(vvvv):");
 	     iVuosi = Kysy.kluku();
-	     System.out.print("Syötä lääkärin syntymäkuukausi(kk):");
+	     System.out.print("Syï¿½tï¿½ lï¿½ï¿½kï¿½rin syntymï¿½kuukausi(kk):");
 	     iKuukausi = Kysy.kluku();
-	     System.out.print("Syötä lääkärin syntymäpäivä(pv):");
+	     System.out.print("Syï¿½tï¿½ lï¿½ï¿½kï¿½rin syntymï¿½pï¿½ivï¿½(pv):");
 	     iPaiva = Kysy.kluku();
 	     cSyntymapaiva = Calendar.getInstance();
 	     cSyntymapaiva.clear();
@@ -139,7 +140,7 @@ public class Laakarirekisteri {
       }while(!tarkastaPaivays(cSyntymapaiva,iPaiva,iKuukausi,iVuosi));
 
 
-      System.out.print("Syötä lääkärin osasto:");
+      System.out.print("Syï¿½tï¿½ lï¿½ï¿½kï¿½rin osasto:");
 	  String sOsasto = Kysy.mjono();
 
 	  Laakari lekuri = new Laakari(iLaakarinro, sNimi, cSyntymapaiva, sOsasto);
@@ -149,7 +150,7 @@ public class Laakarirekisteri {
 
     private static void poista()
     {
-      System.out.print("Syötä lääkärinumero:");
+      System.out.print("Syï¿½tï¿½ lï¿½ï¿½kï¿½rinumero:");
       int iLaakarinro = Kysy.kluku();
 	  String sTulos = lista.poista(iLaakarinro);
 	  System.out.println(sTulos);
@@ -162,13 +163,13 @@ public class Laakarirekisteri {
        {
           System.out.println("Haetaanko ");
           System.out.println("1. Osastolla");
-          System.out.println("2. Lääkärinumerolla");
+          System.out.println("2. Lï¿½ï¿½kï¿½rinumerolla");
           iValinta = Kysy.kluku();
        }while(iValinta <1 || iValinta>2);
 
       if(iValinta == 1)
       {
-          System.out.print("Syötä osasto:");
+          System.out.print("Syï¿½tï¿½ osasto:");
           String sOsasto = Kysy.mjono();
 	      String sLaakarit = lista.hae(sOsasto);
 
@@ -176,39 +177,39 @@ public class Laakarirekisteri {
       	  return;
       }
 
-      System.out.print("Syötä lääkärinumero:");
+      System.out.print("Syï¿½tï¿½ lï¿½ï¿½kï¿½rinumero:");
       int iLaakarinro = Kysy.kluku();
 	  Laakari laakari = lista.hae(iLaakarinro);
 	  if(laakari == null)
-	     System.out.println("Valitsemallasi numerolla ei löydy lääkäriä.");
+	     System.out.println("Valitsemallasi numerolla ei lï¿½ydy lï¿½ï¿½kï¿½riï¿½.");
 	  else
    	     System.out.println(laakari);
     }
 
     private static int valikko()
     {
-      	System.out.println("Lääkärirekisteri v.0.1");
+      	System.out.println("Lï¿½ï¿½kï¿½rirekisteri v.0.1");
     	System.out.println("Valitse toiminto:");
     	System.out.println("0. Lopeta");
-    	System.out.println("1. Tulosta lääkärit");
-    	System.out.println("2. Lisää lääkäri");
-    	System.out.println("3. Poista lääkäri");
-    	System.out.println("4. Hae lääkäri");
+    	System.out.println("1. Tulosta lï¿½ï¿½kï¿½rit");
+    	System.out.println("2. Lisï¿½ï¿½ lï¿½ï¿½kï¿½ri");
+    	System.out.println("3. Poista lï¿½ï¿½kï¿½ri");
+    	System.out.println("4. Hae lï¿½ï¿½kï¿½ri");
     	System.out.println("");
     	return Kysy.kluku();
     }
 
-    /** <p>Metodi päiväyksen tarkistamista varten. </p>
+    /** <p>Metodi pï¿½ivï¿½yksen tarkistamista varten. </p>
      *
-     *  <p>Calendar muuntaa automaattisesti virheellisen päiväyksen "oikeelliseksi". Esimerkiksi 30.2.2012 muunnettaisi arvoon
-     *     1.3.2012 (päiväys on yhden päivän väärin, siirretään siis päivä eteenpäin). Virheellisen päiväyksen voi siis
-     *     tarkistaa siten, että verrataan käyttäjän antamia arvoja Calendarin arvoihin. Jos arvot ovat muuttuneet, on päiväyskin
+     *  <p>Calendar muuntaa automaattisesti virheellisen pï¿½ivï¿½yksen "oikeelliseksi". Esimerkiksi 30.2.2012 muunnettaisi arvoon
+     *     1.3.2012 (pï¿½ivï¿½ys on yhden pï¿½ivï¿½n vï¿½ï¿½rin, siirretï¿½ï¿½n siis pï¿½ivï¿½ eteenpï¿½in). Virheellisen pï¿½ivï¿½yksen voi siis
+     *     tarkistaa siten, ettï¿½ verrataan kï¿½yttï¿½jï¿½n antamia arvoja Calendarin arvoihin. Jos arvot ovat muuttuneet, on pï¿½ivï¿½yskin
      *     virheellinen.</p>
      *
-     *  @param paivays Päiväys Calendar-muotoisena.
-     *  @param paiva Käyttäjän antama päivä
-     *  @param kk Käyttäjän antama kuukausi
-     *  @param vuosi Käyttäjän antama vuosi
+     *  @param paivays Pï¿½ivï¿½ys Calendar-muotoisena.
+     *  @param paiva Kï¿½yttï¿½jï¿½n antama pï¿½ivï¿½
+     *  @param kk Kï¿½yttï¿½jï¿½n antama kuukausi
+     *  @param vuosi Kï¿½yttï¿½jï¿½n antama vuosi
      */
     public static boolean tarkastaPaivays(Calendar cPaivays, int iPV, int iKK, int iV)
     {

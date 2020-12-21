@@ -1,3 +1,4 @@
+package Laakari;
 /**
  * @(#)LaakariLista.java
  *
@@ -10,17 +11,17 @@ import java.io.Serializable;
 
 public class LaakariLista implements Serializable
 {
-	// viittaus listan ensimmäiseen alkioon
+	// viittaus listan ensimmï¿½iseen alkioon
     private Laakari ekaListalla;
 
-	/** Alustaja luo tyhjän listan eli viittaus  = null
+	/** Alustaja luo tyhjï¿½n listan eli viittaus  = null
 	*/
     public LaakariLista()
     {
     	ekaListalla = null;
     }
 
-	/** Palauttaa kaikki listan alkiot yhtenä merkkijonona
+	/** Palauttaa kaikki listan alkiot yhtenï¿½ merkkijonona
 	 */
     public String toString()
     {
@@ -34,27 +35,27 @@ public class LaakariLista implements Serializable
     	return sTulostettava;
     }
 
-	/** Lisää uuden alkion listan alkuun
+	/** Lisï¿½ï¿½ uuden alkion listan alkuun
 	 */
     public String lisaaLaakari(Laakari uusi)
     {
-    	// Tyhjä viite
+    	// Tyhjï¿½ viite
     	if(uusi == null)
-    	   return "Tyhjä viite, lisäys epäonnistui!";
+    	   return "Tyhjï¿½ viite, lisï¿½ys epï¿½onnistui!";
 
     	uusi.setSeuraava(ekaListalla);
     	ekaListalla = uusi;
-      	return "Lisäys onnistui!";
+      	return "Lisï¿½ys onnistui!";
     }
 
-	/** Etsii poistettavan alkion lääkärin numeron perusteella
-	 *  ja sitten päivittää linkit kohdalleen (ohittaa poistettavan)
+	/** Etsii poistettavan alkion lï¿½ï¿½kï¿½rin numeron perusteella
+	 *  ja sitten pï¿½ivittï¿½ï¿½ linkit kohdalleen (ohittaa poistettavan)
 	 */
     public String poista(int iLaakariNro)
     {
-    	// Tyhjästä on paha nyhjästä
+    	// Tyhjï¿½stï¿½ on paha nyhjï¿½stï¿½
     	if(ekaListalla == null)
-           return "Poisto epäonnistui, lista on tyhjä!";
+           return "Poisto epï¿½onnistui, lista on tyhjï¿½!";
 
     	// Poistettava ekana listalla
        	if(ekaListalla.getLaakarinro() == iLaakariNro)
@@ -81,10 +82,10 @@ public class LaakariLista implements Serializable
        	   hakuViite = hakuViite.getSeuraava();
     	}
 
-        return "Poisto epäonnistui";
+        return "Poisto epï¿½onnistui";
     }
 
-	/** Etsitään lääkäri "selaamalla" alusta listaa kunnes löytyy
+	/** Etsitï¿½ï¿½n lï¿½ï¿½kï¿½ri "selaamalla" alusta listaa kunnes lï¿½ytyy
 	 */
     public Laakari hae(int iLaakariNro)
     {
@@ -98,7 +99,7 @@ public class LaakariLista implements Serializable
         return null;
     }
 
-	/** Etsitään lääkärit "selaamalla" alusta lista läpi
+	/** Etsitï¿½ï¿½n lï¿½ï¿½kï¿½rit "selaamalla" alusta lista lï¿½pi
 	 */
     public String hae(String sOsasto)
     {
