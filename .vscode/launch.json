@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MainMetodi",
+            "request": "launch",
+            "mainClass": "HarjateluEs.MainMetodi",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch LuoKurssiTiedosto",
+            "request": "launch",
+            "mainClass": "HarjateluEs.LuoKurssiTiedosto",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch LuoSuoritusTiedosto",
+            "request": "launch",
+            "mainClass": "HarjateluEs.LuoSuoritusTiedosto",
+            "projectName": "ltdns20_341733ad"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AsPaa",
             "request": "launch",
             "mainClass": "TentiOlio.AsPaa",

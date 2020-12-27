@@ -1,0 +1,231 @@
+package HarjateluEs;
+
+/**
+ *
+ * @author MonkkonenE
+ */
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+public class Opiskelija implements Serializable {
+	
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
+	// attribuutit, vastaavat tietokantataulun sarakkeita
+    private int m_opiskelija_id;
+	private String m_etunimi;
+	private String m_sukunimi;
+	private String m_lahiosoite;
+	private String m_postitoimipaikka;
+	private String m_postinro;
+	private String m_email;
+	private String m_puhelinnro;
+	// Opiskelijan suoritukset
+	 
+    LinkedList<Suoritus> m_suoritukset = new LinkedList<Suoritus>(); 
+	
+	
+    public Opiskelija(){
+ 
+    }
+	public Opiskelija(int opnro, String enimi, String snimi, String lahios, 
+						String ptp, String pnro, String email, String puhno ){
+		m_opiskelija_id = opnro;
+		m_etunimi = enimi;
+		m_sukunimi = snimi;
+		m_lahiosoite = lahios;
+		m_postitoimipaikka = ptp;
+		m_postinro = pnro;
+		m_email = email;
+		m_puhelinnro = puhno;
+		m_suoritukset = null;
+	}
+	// getterit ja setterit
+	public int getOpiskelijaId()
+	{
+		return m_opiskelija_id;
+	}
+	public String getEtunimi() {
+		return m_etunimi;
+	}
+	public String getSukunimi() {
+		return m_sukunimi;
+	}
+	public String getLahiosoite() {
+		return m_lahiosoite;
+	}
+	public String getPostitoimipaikka() {
+		return m_postitoimipaikka;
+	}
+	public String getPostinro() {
+		return m_postinro;
+	}
+	public String getEmail() {
+		return m_email;
+	}
+	public String getPuhelinnro() {
+		return m_puhelinnro;
+	}
+	public LinkedList<Suoritus> getSuoritukset() {
+		return m_suoritukset;
+	}
+	public void setOpiskelijaId (int id)
+	{
+		m_opiskelija_id = id;
+	}
+	public void setEtunimi (String ni) {
+		m_etunimi = ni;
+	}
+	public void setSukunimi (String ni) {
+		m_sukunimi = ni;
+	}
+	public void setLahiosoite (String os) {
+		m_lahiosoite = os;
+	}
+	public void setPostitoimipaikka (String ptp) {
+		m_postitoimipaikka = ptp;
+	}
+	public void setPostinro (String pno) {
+		m_postinro = pno;
+	}
+	public void setEmail (String mail) {
+		m_email = mail;
+	}
+	public void setPuhelinnro (String puhveli) {
+		m_puhelinnro = puhveli;
+	}
+    @Override
+    public String toString(){
+        return (m_opiskelija_id + " " + m_etunimi + " " + m_sukunimi);
+    }
+	/*
+	Haetaan opiskelijan tiedot ja palautetaan opiskelijaolio kutsujalle.
+	Staattinen metodi, ei vaadi fyysisen olion olemassaoloa.
+	Tietokantaratkaisussa haetaan tietokannasta
+	*/
+	public static Opiskelija haeOpiskelija (int id) throws Exception
+	{	
+		// laitetaan tiedot Opiskelijaoliolle
+		Opiskelija OpiskelijaOlio = new Opiskelija ();
+		
+		try {
+				//Opiskelija_id, etunimi, sukunimi, lahiosoite, postitoimipaikka, postinro, email, puhelinnro
+				OpiskelijaOlio.setOpiskelijaId (0);
+				OpiskelijaOlio.setEtunimi ("etunimi");
+				OpiskelijaOlio.setSukunimi("sukunimi");
+				OpiskelijaOlio.setLahiosoite ("lahiosoite");
+				OpiskelijaOlio.setPostitoimipaikka ("postitoimipaikka");
+				OpiskelijaOlio.setPostinro ("postinro");
+				OpiskelijaOlio.setEmail ("email");
+				OpiskelijaOlio.setPuhelinnro ("puhelinnro");
+		}
+			
+		catch (Exception e) {
+			throw e;
+		}
+		// palautetaan Opiskelijaolio
+		
+		return OpiskelijaOlio;
+	}
+	/*
+	Lisätään opiskelijan tiedot säiliöön.
+	Metodissa "Opiskelijaolio kirjoittaa tietonsa säiliöön (tietokanta, tiedosto ...)".
+	*/
+     public int lisaaOpiskelija () throws Exception
+	 {
+	// haetaan säiliöstä Opiskelijaa, jonka Opiskelija_id = olion id -> ei voi lisätä jos on jo olemassa
+	
+		try {
+			
+			if (true) { // Opiskelija loytyi
+				throw new Exception("Opiskelija on jo olemassa");
+			}
+		} catch (Exception e) {
+            //  virheet
+                    throw e;
+		}
+		
+		try {
+			
+			// suorita sql-lause
+			int lkm = 0;	
+		//	System.out.println("lkm " + lkm);
+			if (lkm == 0) {
+				throw new Exception("Opiskelijan lisaaminen ei onnistu");
+			}
+		
+        } catch (Exception e) {
+            // virheet
+            throw e;
+		}
+		return 0;
+	}
+	/*
+	Muutetaan opiskelijan tiedot säiliöön id-tietoa (avain) lukuunottamatta. 
+	Metodissa "Opiskelijaolio muuttaa tietonsa säiliöön".
+	*/
+    public int muutaOpiskelija () throws Exception {  
+		// haetaan  opiskelijaa, jonka opiskelija_id = olion id, virhe, jos ei löydy
+		
+		try {
+			
+			if (false) { // Opiskelijata ei löytynyt
+				throw new Exception("Opiskelijaa ei loydy tietokannasta");
+			}
+		} catch (Exception e) {
+            // virheet
+             throw e;
+		}
+		
+		try {
+			
+			
+			// laitetaan olion attribuuttien arvot UPDATEen
+			
+			
+			int lkm = 0;	
+			if (lkm == 0) {
+				throw new Exception("Opiskelijan muuttaminen ei onnistu");
+			}
+		
+        } catch (Exception e) {
+            // virheet
+                throw e;
+		}
+		return 0; // toiminto ok
+	}
+	/**
+	Poistetaan opiskelijan tiedot säiliöstä. 
+	Metodissa "Opiskelijaolio poistaa tietonsa säiliöstä".
+	*/
+	public int poistaOpiskelija () throws Exception { 
+		
+		// parsitaan DELETE
+		
+		try {
+			
+			// suorita poisto
+			int lkm = 0;	
+			if (lkm == 0) {
+				throw new Exception("Opiskelijan poistaminen ei onnistu");
+			}
+			
+             } catch (Exception e) {
+            // JDBC virheet
+                throw e;
+		}
+		return 0; // toiminto ok
+	}
+	/**
+	Haetaan opiskelijan suoritukset.
+	*/
+	public void haeSuoritukset () { 
+		
+		// haetaan suoritukset
+		
+		
+	}
+}
